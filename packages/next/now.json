@@ -1,0 +1,25 @@
+{
+   "name": "@test/now",
+   "version": 2,
+   "builds": [
+      {
+         "src": "next.config.js",
+         "use": "@now/next"
+      }
+   ],
+   "routes": [
+      {
+         "src": "(.*)",
+         "dest": "$1",
+         "continue": true
+      },
+      {
+         "src": "/sitemap.xml",
+         "dest": "/api/sitemap"
+      },
+      {
+         "src": "^/favicon.ico",
+         "dest": "static/favicon.ico"
+      }
+   ]
+}
