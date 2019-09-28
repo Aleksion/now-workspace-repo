@@ -3,14 +3,14 @@
    "version": 2,
    "builds": [
       {
-         "src": "packages/test/next.config.js",
+         "src": "packages/next/next.config.js",
          "use": "@now/next"
       }
    ],
    "routes": [
       {
          "src": "(.*)",
-         "dest": "/packages/test$1",
+         "dest": "/packages/next$1",
          "continue": true
       },
       {
@@ -19,7 +19,7 @@
       },
       {
          "src": "^/favicon.ico",
-         "dest": "/packages/test/static/favicon.ico"
+         "dest": "/packages/next/static/favicon.ico"
       }
    ]
 }

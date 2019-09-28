@@ -6,10 +6,13 @@
   "workspaces": {
     "packages": [
       "packages/*"
+    ],
+    "nohoist": [
+      "**/next"
     ]
   },
   "scripts": {
-    "dev:works": "yarn workspace test-next dev",
+    "dev:works": "yarn workspace @test/next dev",
     "dev:fails": "now dev"
   }
 }
